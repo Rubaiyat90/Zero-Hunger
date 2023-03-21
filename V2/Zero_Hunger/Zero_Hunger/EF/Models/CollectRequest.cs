@@ -17,6 +17,7 @@ namespace ZeroHunger.Ef.Models
         public int ResId { get; set; }
         public string FoodName { get; set; }
         public DateTime MaxPresDate { get; set; }
+        public string CollectionDate { get; set; }
         public virtual Employees Employees { get; set; }
         public virtual Resturant Resturant { get; set; }
 

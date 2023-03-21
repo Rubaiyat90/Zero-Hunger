@@ -55,5 +55,36 @@ namespace Zero_Hunger.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult RequestList()
+        {
+            var db = new ZHContext();
+            var emp = db.CollectRequests.ToList();
+            return View(emp);
+
+        }
+        [HttpGet]
+        public ActionResult AssignEmployee(int id)
+        {
+            var db = new ZHContext();
+            var emp = (from e in db.CollectRequests where e.CrId == id select e).SingleOrDefault();
+            return View(emp);
+        }
+        [HttpPost]
+        public ActionResult AssignEmployee(CollectRequests model)
+        {
+            var db = new ZHContext();
+            var emp = (from e in db.CollectRequests where e.CrId == model.CrId select e).SingleOrDefault();
+            db.Entry(emp).CurrentValues.SetValues(model);
+            db.SaveChanges();
+            return RedirectToAction("Assigned");
+        }
+        public ActionResult Assigned()
+        {
+            var db = new ZHContext();
+            var emp = db.CollectRequests.ToList();
+            return View(emp);
+
+        }
+
     }
 }

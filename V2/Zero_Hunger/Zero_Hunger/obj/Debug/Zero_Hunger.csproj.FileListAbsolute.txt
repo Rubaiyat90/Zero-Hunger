@@ -259,3 +259,5 @@ G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.csproj
 G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.dll
 G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.pdb
 G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.Migrations.UpdatedDistribution.resources
+G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.Migrations.Updated.resources
+G:\Spring_23\Zero-Hunger\V2\Zero_Hunger\Zero_Hunger\obj\Debug\Zero_Hunger.Migrations.Updated1.resources

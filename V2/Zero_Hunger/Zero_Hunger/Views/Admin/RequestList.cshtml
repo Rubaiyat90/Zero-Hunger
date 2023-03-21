@@ -1,17 +1,15 @@
 ﻿@model IEnumerable<ZeroHunger.Ef.Models.CollectRequests>
 
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutResturant.cshtml";
+    ViewBag.Title = "RequestList";
 }
 
-<h2>Index</h2>
-
-<p class="btn btn-default">
-    @Html.ActionLink("Create New Request", "Create")
-</p>
+<h2>RequestList</h2>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeId)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.ResId)
         </th>
@@ -21,11 +19,17 @@
         <th>
             @Html.DisplayNameFor(model => model.MaxPresDate)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CollectionDate)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeId)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.ResId)
         </td>
@@ -35,7 +39,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.MaxPresDate)
         </td>
-        
+        <td>
+            @Html.DisplayFor(modelItem => item.CollectionDate)
+        </td>
+        <td class="btn btn-default">
+            @Html.ActionLink("Accept And Assign", "AssignEmployee", new { id = item.CrId })
+        </td>
     </tr>
 }
 
