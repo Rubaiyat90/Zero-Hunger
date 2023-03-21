@@ -29,6 +29,12 @@ namespace Zero_Hunger.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult Food()
+        {
+            var db = new ZHContext();
+            var fd = db.Foods.ToList();
+            return View(fd);
+        }
     }
 
     

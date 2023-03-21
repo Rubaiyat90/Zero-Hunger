@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using Zero_Hunger.EF.Models;
 using ZeroHunger.Ef.Models;
 
 namespace ZeroHunger.Ef
@@ -14,6 +15,7 @@ namespace ZeroHunger.Ef
         public DbSet<Resturant> Resturants { get; set; }
         public DbSet<CollectRequests> CollectRequests { get; set; }
         public DbSet<Distribution> Distribution { get; set; }
+        public DbSet<Food> Foods { get; set; }
 
     }
 }

@@ -153,6 +153,10 @@
     <Compile Include="Migrations\202303202121441_DUpdated.designer.cs">
       <DependentUpon>202303202121441_DUpdated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303210757257_UpdatedDistribution.cs" />
+    <Compile Include="Migrations\202303210757257_UpdatedDistribution.designer.cs">
+      <DependentUpon>202303210757257_UpdatedDistribution.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -207,6 +211,7 @@
     <Content Include="Views\Shared\_LayoutEmployee.cshtml" />
     <Content Include="Views\Shared\_LayoutResturant.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Resturant\Food.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -234,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303202121441_DUpdated.resx">
       <DependentUpon>202303202121441_DUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303210757257_UpdatedDistribution.resx">
+      <DependentUpon>202303210757257_UpdatedDistribution.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

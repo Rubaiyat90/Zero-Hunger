@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Zero_Hunger.EF.Models.Food>
+
+@{
+    ViewBag.Title = "Food";
+    Layout = "~/Views/Shared/_LayoutResturant.cshtml";
+}
+
+<h2>Food</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResId)
+        </td>
+        
+    </tr>
+}
+
+</table>

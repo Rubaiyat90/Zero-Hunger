@@ -15,7 +15,7 @@ namespace ZeroHunger.Ef.Models
         [Required]
         public string ResturantName { get; set; }
         [Required]
-        public string EmployeeId { get; set; }
+        public string EmployeeName { get; set; }
         public DateTime CollectionDate { get; set; }
     }
 }
